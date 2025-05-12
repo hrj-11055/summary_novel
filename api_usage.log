@@ -1,0 +1,280 @@
+[2025-04-27 18:06:23] Token usage: Prompt: 21494, Completion: 574, Total: 22068
+[2025-04-27 18:14:42] Token usage: Prompt: 21494, Completion: 580, Total: 22074
+[2025-04-27 18:42:24] 1-10.txt Token usage: Prompt: 18547, Completion: 571, Total: 19118
+[2025-04-27 18:42:49] 11-20.txt Token usage: Prompt: 21753, Completion: 444, Total: 22197
+[2025-04-27 18:43:21] 21-30.txt Token usage: Prompt: 23857, Completion: 588, Total: 24445
+[2025-04-27 23:02:11] 1-10.txt Token usage: Prompt: 19458, Completion: 498, Total: 19956
+[2025-04-27 23:02:22] 11-20.txt Token usage: Prompt: 22815, Completion: 678, Total: 23493
+[2025-04-27 23:02:30] 21-30.txt Token usage: Prompt: 24416, Completion: 378, Total: 24794
+[2025-04-27 23:02:41] 31-40.txt Token usage: Prompt: 24645, Completion: 612, Total: 25257
+[2025-04-27 23:02:52] 41-50.txt Token usage: Prompt: 24310, Completion: 604, Total: 24914
+[2025-04-27 23:03:00] 51-60.txt Token usage: Prompt: 25138, Completion: 460, Total: 25598
+[2025-04-27 23:03:15] 61-70.txt Token usage: Prompt: 25424, Completion: 914, Total: 26338
+[2025-04-27 23:03:24] 71-80.txt Token usage: Prompt: 28556, Completion: 450, Total: 29006
+[2025-04-27 23:03:35] 81-90.txt Token usage: Prompt: 27066, Completion: 599, Total: 27665
+[2025-04-27 23:03:43] 91-100.txt Token usage: Prompt: 32462, Completion: 305, Total: 32767
+[2025-04-28 00:01:36] 101-110.txt Token usage: Prompt: 29168, Completion: 620, Total: 29788
+[2025-04-28 00:02:04] 111-120.txt Token usage: Prompt: 28270, Completion: 745, Total: 29015
+[2025-04-28 00:02:26] 121-130.txt Token usage: Prompt: 31765, Completion: 492, Total: 32257
+[2025-04-28 00:02:50] 131-140.txt Token usage: Prompt: 29392, Completion: 527, Total: 29919
+[2025-04-28 00:03:00] 141-150.txt Token usage: Prompt: 32768, Completion: 1, Total: 32769
+[2025-04-28 00:35:31] 101-110.txt Token usage: Prompt: 29168, Completion: 718, Total: 29886
+[2025-04-28 00:35:56] 111-120.txt Token usage: Prompt: 28270, Completion: 629, Total: 28899
+[2025-04-28 00:36:21] 121-130.txt Token usage: Prompt: 31765, Completion: 614, Total: 32379
+[2025-04-28 00:36:52] 131-140.txt Token usage: Prompt: 29392, Completion: 838, Total: 30230
+[2025-04-28 00:37:01] 141-150.txt Token usage: Prompt: 32768, Completion: 1, Total: 32769
+[2025-04-28 00:43:23] 101-110.txt Token usage: Prompt: 29452, Completion: 820, Total: 30272
+[2025-04-28 00:43:49] 111-120.txt Token usage: Prompt: 28554, Completion: 650, Total: 29204
+[2025-04-28 00:44:12] 121-130.txt Token usage: Prompt: 32049, Completion: 499, Total: 32548
+[2025-04-28 00:44:40] 131-140.txt Token usage: Prompt: 29676, Completion: 644, Total: 30320
+[2025-04-28 00:44:49] 141-150.txt Token usage: Prompt: 32768, Completion: 1, Total: 32769
+[2025-04-28 01:33:35] 141-150.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 32768, Completion: 1, Total: 32769, Cached: 0
+[2025-04-28 01:34:02] 151-160.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 31319, Completion: 668, Total: 31987, Cached: 0
+[2025-04-28 01:34:31] 161-170.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 27947, Completion: 725, Total: 28672, Cached: 0
+[2025-04-28 01:34:57] 171-180.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 26175, Completion: 693, Total: 26868, Cached: 0
+[2025-04-28 01:35:22] 181-190.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 29484, Completion: 669, Total: 30153, Cached: 0
+[2025-04-28 01:35:45] 191-200.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 32134, Completion: 502, Total: 32636, Cached: 0
+[2025-04-28 01:45:29] 141-150.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 32768, Completion: 1, Total: 32769, Cached: 0
+[2025-04-28 01:45:56] 151-160.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 30712, Completion: 673, Total: 31385, Cached: 0
+[2025-04-28 01:46:27] 161-170.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 27340, Completion: 864, Total: 28204, Cached: 0
+[2025-04-28 01:46:56] 171-180.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 25568, Completion: 795, Total: 26363, Cached: 0
+[2025-04-28 01:47:26] 181-190.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 28877, Completion: 777, Total: 29654, Cached: 0
+[2025-04-28 01:47:51] 191-200.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 31527, Completion: 479, Total: 32006, Cached: 0
+2025-04-28 03:55:54 - 文件名: 141-150.txt, 模型: doubao-1-5-pro-32k-250115, 提示词token数: 34854, 完成内容token数: 650, 总token数: 35504
+2025-04-28 03:56:31 - 文件名: 151-160.txt, 模型: doubao-1-5-pro-32k-250115, 提示词token数: 30704, 完成内容token数: 644, 总token数: 31348
+2025-04-28 03:57:22 - 文件名: 161-170.txt, 模型: doubao-1-5-pro-32k-250115, 提示词token数: 27332, 完成内容token数: 920, 总token数: 28252
+2025-04-28 04:01:29 - 文件名: 141-150.txt, 模型: doubao-1-5-pro-32k-250115, 提示词token数: 34854, 完成内容token数: 599, 总token数: 35453
+2025-04-28 04:02:12 - 文件名: 151-160.txt, 模型: doubao-1-5-pro-32k-250115, 提示词token数: 30704, 完成内容token数: 705, 总token数: 31409
+2025-04-28 04:02:48 - 文件名: 161-170.txt, 模型: doubao-1-5-pro-32k-250115, 提示词token数: 27332, 完成内容token数: 765, 总token数: 28097
+2025-04-28 04:03:17 - 文件名: 171-180.txt, 模型: doubao-1-5-pro-32k-250115, 提示词token数: 25560, 完成内容token数: 599, 总token数: 26159
+2025-04-28 04:03:51 - 文件名: 181-190.txt, 模型: doubao-1-5-pro-32k-250115, 提示词token数: 28869, 完成内容token数: 632, 总token数: 29501
+2025-04-28 04:04:21 - 文件名: 191-200.txt, 模型: doubao-1-5-pro-32k-250115, 提示词token数: 31519, 完成内容token数: 506, 总token数: 32025
+2025-04-28 04:06:10 - 文件名: 141-150.txt, 模型: doubao-1-5-pro-32k-250115, 提示词token数: 34854, 完成内容token数: 705, 总token数: 35559
+[2025-04-28 04:44:51] 141-150.txt Token usage:Promt: 34626, Completion: 614, Total: 35240, Model: doubao-1-5-pro-32k-250115
+[2025-04-28 04:45:22] 151-160.txt Token usage:Promt: 30476, Completion: 605, Total: 31081, Model: doubao-1-5-pro-32k-250115
+[2025-04-28 04:50:12] 141-150.txt Token usage:Prompt: 34626, Completion: 629, Total: 35255, Model: doubao-1-5-pro-32k-250115
+[2025-04-28 04:50:43] 151-160.txt Token usage:Prompt: 30476, Completion: 583, Total: 31059, Model: doubao-1-5-pro-32k-250115
+[2025-04-28 04:51:19] 161-170.txt Token usage:Prompt: 27104, Completion: 766, Total: 27870, Model: doubao-1-5-pro-32k-250115
+[2025-04-28 04:51:50] 171-180.txt Token usage:Prompt: 25332, Completion: 693, Total: 26025, Model: doubao-1-5-pro-32k-250115
+[2025-04-28 04:52:21] 181-190.txt Token usage:Prompt: 28641, Completion: 598, Total: 29239, Model: doubao-1-5-pro-32k-250115
+[2025-04-28 04:52:51] 191-200.txt Token usage:Prompt: 31291, Completion: 572, Total: 31863, Model: doubao-1-5-pro-32k-250115
+[2025-04-28 23:14:58] 1-10.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 18599, Completion: 638, Total: 19237
+[2025-04-28 23:15:40] 101-110.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 28668, Completion: 819, Total: 29487
+[2025-04-28 23:16:03] 11-20.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 21805, Completion: 423, Total: 22228
+[2025-04-28 23:16:39] 111-120.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 27770, Completion: 710, Total: 28480
+[2025-04-28 23:17:16] 121-130.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 31265, Completion: 615, Total: 31880
+[2025-04-28 23:17:52] 131-140.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 28892, Completion: 606, Total: 29498
+[2025-04-28 23:18:34] 141-150.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 34685, Completion: 743, Total: 35428
+[2025-04-28 23:19:15] 151-160.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 30535, Completion: 678, Total: 31213
+[2025-04-28 23:20:05] 161-170.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 27163, Completion: 881, Total: 28044
+[2025-04-28 23:20:41] 171-180.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 25391, Completion: 609, Total: 26000
+[2025-04-28 23:21:20] 181-190.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 28700, Completion: 609, Total: 29309
+[2025-04-28 23:21:52] 191-200.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 31350, Completion: 518, Total: 31868
+[2025-04-28 23:22:27] 21-30.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 23909, Completion: 586, Total: 24495
+[2025-04-28 23:23:08] 31-40.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 24138, Completion: 753, Total: 24891
+[2025-04-28 23:23:51] 41-50.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 23186, Completion: 632, Total: 23818
+[2025-04-28 23:24:34] 51-60.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 24631, Completion: 687, Total: 25318
+[2025-04-28 23:25:16] 61-70.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 24917, Completion: 666, Total: 25583
+[2025-04-28 23:25:51] 71-80.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 28049, Completion: 523, Total: 28572
+[2025-04-28 23:26:30] 81-90.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 26559, Completion: 658, Total: 27217
+[2025-04-28 23:27:02] 91-100.txt Model: doubao-1-5-pro-32k-250115 Token usage: Prompt: 31955, Completion: 482, Total: 32437
+[2025-04-29 02:24:33] 2015-2015.txt Token usage:Prompt: 6040, Completion: 558, Total: 6598, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:24:37] 221-230.txt Token usage:Prompt: 26501, Completion: 496, Total: 26997, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:24:41] 2005-2014.txt Token usage:Prompt: 27177, Completion: 585, Total: 27762, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:24:41] 201-210.txt Token usage:Prompt: 28976, Completion: 534, Total: 29510, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:24:44] 211-220.txt Token usage:Prompt: 30489, Completion: 569, Total: 31058, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:25:09] 261-270.txt Token usage:Prompt: 27039, Completion: 442, Total: 27481, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:25:10] 271-280.txt Token usage:Prompt: 25136, Completion: 495, Total: 25631, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:25:11] 251-260.txt Token usage:Prompt: 26141, Completion: 506, Total: 26647, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:25:13] 231-240.txt Token usage:Prompt: 27216, Completion: 513, Total: 27729, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:25:18] 241-250.txt Token usage:Prompt: 25250, Completion: 635, Total: 25885, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:25:46] 291-300.txt Token usage:Prompt: 25555, Completion: 495, Total: 26050, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:25:47] 321-330.txt Token usage:Prompt: 24794, Completion: 561, Total: 25355, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:25:47] 311-320.txt Token usage:Prompt: 24362, Completion: 493, Total: 24855, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:25:48] 301-310.txt Token usage:Prompt: 24235, Completion: 556, Total: 24791, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:25:49] 281-290.txt Token usage:Prompt: 25493, Completion: 541, Total: 26034, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:26:15] 361-370.txt Token usage:Prompt: 24937, Completion: 482, Total: 25419, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:26:17] 351-360.txt Token usage:Prompt: 24011, Completion: 520, Total: 24531, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:26:17] 341-350.txt Token usage:Prompt: 24344, Completion: 560, Total: 24904, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:26:18] 331-340.txt Token usage:Prompt: 23761, Completion: 604, Total: 24365, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:26:20] 371-380.txt Token usage:Prompt: 25578, Completion: 621, Total: 26199, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:26:44] 381-390.txt Token usage:Prompt: 24561, Completion: 533, Total: 25094, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:26:49] 401-410.txt Token usage:Prompt: 24651, Completion: 559, Total: 25210, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:26:52] 391-400.txt Token usage:Prompt: 24618, Completion: 574, Total: 25192, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:26:55] 411-420.txt Token usage:Prompt: 23316, Completion: 627, Total: 23943, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:26:56] 421-430.txt Token usage:Prompt: 24424, Completion: 676, Total: 25100, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:27:21] 441-450.txt Token usage:Prompt: 23769, Completion: 402, Total: 24171, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:27:27] 431-440.txt Token usage:Prompt: 24854, Completion: 547, Total: 25401, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:27:28] 461-470.txt Token usage:Prompt: 23642, Completion: 544, Total: 24186, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:27:32] 471-480.txt Token usage:Prompt: 25330, Completion: 642, Total: 25972, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:27:34] 451-460.txt Token usage:Prompt: 24813, Completion: 693, Total: 25506, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:27:58] 501-510.txt Token usage:Prompt: 25021, Completion: 442, Total: 25463, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:28:03] 481-490.txt Token usage:Prompt: 24430, Completion: 504, Total: 24934, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:28:07] 491-500.txt Token usage:Prompt: 25448, Completion: 558, Total: 26006, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:28:09] 511-520.txt Token usage:Prompt: 24924, Completion: 597, Total: 25521, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:28:11] 521-530.txt Token usage:Prompt: 25202, Completion: 628, Total: 25830, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:28:42] 541-550.txt Token usage:Prompt: 24770, Completion: 489, Total: 25259, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:28:44] 551-560.txt Token usage:Prompt: 25335, Completion: 545, Total: 25880, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:28:45] 531-540.txt Token usage:Prompt: 26128, Completion: 579, Total: 26707, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:28:46] 561-570.txt Token usage:Prompt: 24874, Completion: 611, Total: 25485, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:28:47] 572-581.txt Token usage:Prompt: 24286, Completion: 533, Total: 24819, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:29:16] 603-612.txt Token usage:Prompt: 24678, Completion: 444, Total: 25122, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:29:20] 593-602.txt Token usage:Prompt: 27659, Completion: 527, Total: 28186, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:29:25] 613-622.txt Token usage:Prompt: 25249, Completion: 651, Total: 25900, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:29:27] 623-632.txt Token usage:Prompt: 24515, Completion: 626, Total: 25141, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:29:28] 582-591.txt Token usage:Prompt: 25687, Completion: 594, Total: 26281, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:30:00] 635-644.txt Token usage:Prompt: 28007, Completion: 465, Total: 28472, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:30:02] 645-654.txt Token usage:Prompt: 27740, Completion: 605, Total: 28345, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:30:05] 665-674.txt Token usage:Prompt: 26421, Completion: 553, Total: 26974, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:30:08] 675-684.txt Token usage:Prompt: 26874, Completion: 698, Total: 27572, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:30:10] 655-664.txt Token usage:Prompt: 26924, Completion: 657, Total: 27581, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:30:42] 695-704.txt Token usage:Prompt: 25056, Completion: 530, Total: 25586, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:30:43] 705-714.txt Token usage:Prompt: 25434, Completion: 524, Total: 25958, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:30:47] 726-735.txt Token usage:Prompt: 26807, Completion: 563, Total: 27370, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:30:51] 685-694.txt Token usage:Prompt: 27383, Completion: 682, Total: 28065, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:30:55] 715-724.txt Token usage:Prompt: 25845, Completion: 718, Total: 26563, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:31:22] 776-785.txt Token usage:Prompt: 27913, Completion: 447, Total: 28360, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:31:33] 756-765.txt Token usage:Prompt: 25954, Completion: 588, Total: 26542, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:31:35] 746-755.txt Token usage:Prompt: 25811, Completion: 686, Total: 26497, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:31:40] 736-745.txt Token usage:Prompt: 25786, Completion: 692, Total: 26478, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:31:43] 766-775.txt Token usage:Prompt: 26216, Completion: 737, Total: 26953, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:32:17] 816-825.txt Token usage:Prompt: 29112, Completion: 511, Total: 29623, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:32:21] 796-805.txt Token usage:Prompt: 26764, Completion: 568, Total: 27332, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:32:21] 786-795.txt Token usage:Prompt: 27341, Completion: 620, Total: 27961, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:32:33] 826-835.txt Token usage:Prompt: 30198, Completion: 753, Total: 30951, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:32:34] 806-815.txt Token usage:Prompt: 26458, Completion: 769, Total: 27227, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:33:10] 868-877.txt Token usage:Prompt: 25838, Completion: 637, Total: 26475, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:33:16] 836-845.txt Token usage:Prompt: 27475, Completion: 641, Total: 28116, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:33:17] 846-855.txt Token usage:Prompt: 26381, Completion: 630, Total: 27011, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:33:20] 856-865.txt Token usage:Prompt: 25729, Completion: 698, Total: 26427, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:33:55] 930-939.txt Token usage:Prompt: 24780, Completion: 556, Total: 25336, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:34:00] 909-918.txt Token usage:Prompt: 26308, Completion: 589, Total: 26897, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:34:01] 920-929.txt Token usage:Prompt: 26424, Completion: 646, Total: 27070, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:34:05] 899-908.txt Token usage:Prompt: 28027, Completion: 692, Total: 28719, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:34:05] 888-897.txt Token usage:Prompt: 25123, Completion: 784, Total: 25907, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:34:34] 961-970.txt Token usage:Prompt: 26787, Completion: 412, Total: 27199, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:34:37] 940-949.txt Token usage:Prompt: 25537, Completion: 514, Total: 26051, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:34:43] 971-980.txt Token usage:Prompt: 26522, Completion: 586, Total: 27108, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:34:43] 950-959.txt Token usage:Prompt: 25273, Completion: 586, Total: 25859, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:34:45] 981-990.txt Token usage:Prompt: 24419, Completion: 669, Total: 25088, Model: doubao-1-5-pro-32k-250115
+[2025-04-29 02:35:21] 991-1000.txt Token usage:Prompt: 24592, Completion: 538, Total: 25130, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:22:27] 1043-1052.txt Token usage:Prompt: 23442, Completion: 517, Total: 23959, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:22:29] 1023-1032.txt Token usage:Prompt: 23442, Completion: 540, Total: 23982, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:22:30] 1012-1021.txt Token usage:Prompt: 25227, Completion: 467, Total: 25694, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:22:34] 1001-1010.txt Token usage:Prompt: 25428, Completion: 633, Total: 26061, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:22:36] 1033-1042.txt Token usage:Prompt: 24999, Completion: 553, Total: 25552, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:23:04] 1073-1082.txt Token usage:Prompt: 22970, Completion: 540, Total: 23510, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:23:04] 1053-1062.txt Token usage:Prompt: 23751, Completion: 548, Total: 24299, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:23:05] 1093-1102.txt Token usage:Prompt: 19680, Completion: 571, Total: 20251, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:23:07] 1083-1092.txt Token usage:Prompt: 22869, Completion: 599, Total: 23468, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:23:09] 1063-1072.txt Token usage:Prompt: 23405, Completion: 624, Total: 24029, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:23:49] 1023-1032.txt Token usage:Prompt: 23442, Completion: 427, Total: 23869, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:23:53] 1033-1042.txt Token usage:Prompt: 24999, Completion: 507, Total: 25506, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:23:58] 1012-1021.txt Token usage:Prompt: 25227, Completion: 564, Total: 25791, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:23:58] 1043-1052.txt Token usage:Prompt: 23442, Completion: 573, Total: 24015, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:24:02] 1001-1010.txt Token usage:Prompt: 25428, Completion: 640, Total: 26068, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:24:27] 1093-1102.txt Token usage:Prompt: 19680, Completion: 513, Total: 20193, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:24:31] 1083-1092.txt Token usage:Prompt: 22869, Completion: 594, Total: 23463, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:24:36] 1063-1072.txt Token usage:Prompt: 23405, Completion: 642, Total: 24047, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:24:38] 1073-1082.txt Token usage:Prompt: 22970, Completion: 668, Total: 23638, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:24:39] 1053-1062.txt Token usage:Prompt: 23751, Completion: 641, Total: 24392, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:25:04] 1103-1112.txt Token usage:Prompt: 21039, Completion: 516, Total: 21555, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:25:08] 1113-1122.txt Token usage:Prompt: 20234, Completion: 632, Total: 20866, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:25:09] 1143-1152.txt Token usage:Prompt: 20619, Completion: 614, Total: 21233, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:25:10] 1123-1132.txt Token usage:Prompt: 20762, Completion: 628, Total: 21390, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:25:11] 1133-1142.txt Token usage:Prompt: 21852, Completion: 572, Total: 22424, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:25:35] 1174-1183.txt Token usage:Prompt: 21173, Completion: 489, Total: 21662, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:25:36] 1164-1173.txt Token usage:Prompt: 20879, Completion: 487, Total: 21366, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:25:37] 1194-1203.txt Token usage:Prompt: 21575, Completion: 458, Total: 22033, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:25:38] 1154-1163.txt Token usage:Prompt: 21658, Completion: 432, Total: 22090, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:25:42] 1184-1193.txt Token usage:Prompt: 21977, Completion: 542, Total: 22519, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:26:12] 1204-1213.txt Token usage:Prompt: 22053, Completion: 568, Total: 22621, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:26:16] 1224-1233.txt Token usage:Prompt: 23666, Completion: 527, Total: 24193, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:26:18] 1234-1243.txt Token usage:Prompt: 24369, Completion: 602, Total: 24971, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:26:21] 1214-1223.txt Token usage:Prompt: 23841, Completion: 692, Total: 24533, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:26:26] 1244-1253.txt Token usage:Prompt: 23844, Completion: 688, Total: 24532, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:26:50] 1294-1303.txt Token usage:Prompt: 22248, Completion: 521, Total: 22769, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:26:57] 1274-1283.txt Token usage:Prompt: 26602, Completion: 517, Total: 27119, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:27:00] 1284-1293.txt Token usage:Prompt: 25373, Completion: 586, Total: 25959, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:27:01] 1264-1273.txt Token usage:Prompt: 29004, Completion: 578, Total: 29582, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:27:02] 1254-1263.txt Token usage:Prompt: 24406, Completion: 556, Total: 24962, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:27:29] 1324-1333.txt Token usage:Prompt: 22709, Completion: 451, Total: 23160, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:27:30] 1344-1353.txt Token usage:Prompt: 22519, Completion: 492, Total: 23011, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:27:30] 1334-1343.txt Token usage:Prompt: 25060, Completion: 454, Total: 25514, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:27:31] 1304-1313.txt Token usage:Prompt: 22722, Completion: 464, Total: 23186, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:27:36] 1314-1323.txt Token usage:Prompt: 22614, Completion: 590, Total: 23204, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:28:03] 1374-1383.txt Token usage:Prompt: 21135, Completion: 482, Total: 21617, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:28:07] 1394-1403.txt Token usage:Prompt: 22206, Completion: 523, Total: 22729, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:28:11] 1384-1393.txt Token usage:Prompt: 24733, Completion: 584, Total: 25317, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:28:11] 1364-1373.txt Token usage:Prompt: 22257, Completion: 562, Total: 22819, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:28:13] 1354-1363.txt Token usage:Prompt: 21581, Completion: 626, Total: 22207, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:28:44] 1434-1443.txt Token usage:Prompt: 22548, Completion: 497, Total: 23045, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:28:50] 1424-1433.txt Token usage:Prompt: 22254, Completion: 534, Total: 22788, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:28:50] 1444-1453.txt Token usage:Prompt: 23818, Completion: 564, Total: 24382, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:28:51] 1414-1423.txt Token usage:Prompt: 23029, Completion: 599, Total: 23628, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:28:57] 1404-1413.txt Token usage:Prompt: 23254, Completion: 704, Total: 23958, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:29:25] 1474-1483.txt Token usage:Prompt: 21311, Completion: 412, Total: 21723, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:29:29] 1494-1503.txt Token usage:Prompt: 22228, Completion: 491, Total: 22719, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:29:33] 1484-1493.txt Token usage:Prompt: 21054, Completion: 551, Total: 21605, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:29:38] 1454-1463.txt Token usage:Prompt: 23065, Completion: 618, Total: 23683, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:29:39] 1464-1473.txt Token usage:Prompt: 23644, Completion: 612, Total: 24256, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:30:12] 1505-1514.txt Token usage:Prompt: 19669, Completion: 476, Total: 20145, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:30:13] 1545-1554.txt Token usage:Prompt: 24128, Completion: 527, Total: 24655, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:30:18] 1525-1534.txt Token usage:Prompt: 21931, Completion: 610, Total: 22541, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:30:18] 1535-1544.txt Token usage:Prompt: 22380, Completion: 637, Total: 23017, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:30:19] 1515-1524.txt Token usage:Prompt: 21406, Completion: 697, Total: 22103, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:30:48] 1555-1564.txt Token usage:Prompt: 23142, Completion: 432, Total: 23574, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:30:50] 1585-1594.txt Token usage:Prompt: 20348, Completion: 469, Total: 20817, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:30:55] 1595-1604.txt Token usage:Prompt: 21478, Completion: 568, Total: 22046, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:30:59] 1575-1584.txt Token usage:Prompt: 20673, Completion: 635, Total: 21308, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:31:02] 1565-1574.txt Token usage:Prompt: 21304, Completion: 656, Total: 21960, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:31:32] 1625-1634.txt Token usage:Prompt: 20688, Completion: 476, Total: 21164, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:31:34] 1645-1654.txt Token usage:Prompt: 22651, Completion: 505, Total: 23156, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:31:36] 1615-1624.txt Token usage:Prompt: 22938, Completion: 538, Total: 23476, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:31:37] 1635-1644.txt Token usage:Prompt: 22491, Completion: 518, Total: 23009, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:31:41] 1605-1614.txt Token usage:Prompt: 22392, Completion: 546, Total: 22938, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:32:09] 1665-1674.txt Token usage:Prompt: 22575, Completion: 453, Total: 23028, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:32:12] 1655-1664.txt Token usage:Prompt: 23563, Completion: 500, Total: 24063, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:32:12] 1685-1694.txt Token usage:Prompt: 21929, Completion: 514, Total: 22443, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:32:17] 1695-1704.txt Token usage:Prompt: 21442, Completion: 624, Total: 22066, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:32:20] 1675-1684.txt Token usage:Prompt: 21858, Completion: 633, Total: 22491, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:32:49] 1725-1734.txt Token usage:Prompt: 18053, Completion: 455, Total: 18508, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:32:51] 1735-1744.txt Token usage:Prompt: 22479, Completion: 497, Total: 22976, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:32:52] 1745-1754.txt Token usage:Prompt: 20676, Completion: 474, Total: 21150, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:32:53] 1715-1724.txt Token usage:Prompt: 19833, Completion: 498, Total: 20331, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:32:55] 1705-1714.txt Token usage:Prompt: 23574, Completion: 570, Total: 24144, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:33:23] 1795-1804.txt Token usage:Prompt: 20071, Completion: 410, Total: 20481, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:33:28] 1785-1794.txt Token usage:Prompt: 21253, Completion: 445, Total: 21698, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:33:36] 1755-1764.txt Token usage:Prompt: 21174, Completion: 674, Total: 21848, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:33:36] 1765-1774.txt Token usage:Prompt: 19833, Completion: 638, Total: 20471, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:33:39] 1775-1784.txt Token usage:Prompt: 21360, Completion: 653, Total: 22013, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:34:08] 1815-1824.txt Token usage:Prompt: 20650, Completion: 491, Total: 21141, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:34:11] 1825-1834.txt Token usage:Prompt: 21281, Completion: 525, Total: 21806, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:34:12] 1805-1814.txt Token usage:Prompt: 19999, Completion: 577, Total: 20576, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:34:14] 1835-1844.txt Token usage:Prompt: 19067, Completion: 524, Total: 19591, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:34:15] 1845-1854.txt Token usage:Prompt: 23144, Completion: 579, Total: 23723, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:34:43] 1885-1894.txt Token usage:Prompt: 24185, Completion: 429, Total: 24614, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:34:48] 1855-1864.txt Token usage:Prompt: 22720, Completion: 566, Total: 23286, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:34:50] 1875-1884.txt Token usage:Prompt: 23394, Completion: 600, Total: 23994, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:34:51] 1865-1874.txt Token usage:Prompt: 21710, Completion: 608, Total: 22318, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:34:59] 1895-1904.txt Token usage:Prompt: 24535, Completion: 619, Total: 25154, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:35:32] 1915-1924.txt Token usage:Prompt: 23704, Completion: 558, Total: 24262, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:35:33] 1905-1914.txt Token usage:Prompt: 25849, Completion: 552, Total: 26401, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:35:35] 1925-1934.txt Token usage:Prompt: 25581, Completion: 589, Total: 26170, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:35:42] 1935-1944.txt Token usage:Prompt: 27277, Completion: 614, Total: 27891, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:35:51] 1945-1954.txt Token usage:Prompt: 29234, Completion: 771, Total: 30005, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:36:27] 1965-1974.txt Token usage:Prompt: 27035, Completion: 580, Total: 27615, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:36:33] 1975-1984.txt Token usage:Prompt: 29078, Completion: 636, Total: 29714, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:36:33] 1985-1994.txt Token usage:Prompt: 25859, Completion: 654, Total: 26513, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:36:36] 1995-2004.txt Token usage:Prompt: 27817, Completion: 680, Total: 28497, Model: doubao-1-5-pro-32k-250115
+[2025-05-08 22:36:39] 1955-1964.txt Token usage:Prompt: 27309, Completion: 678, Total: 27987, Model: doubao-1-5-pro-32k-250115
+[2025-05-12 11:40:11] 21-30.txt Token usage:Prompt: 14091, Completion: 417, Total: 14508, Model: doubao-1-5-pro-32k-250115
+[2025-05-12 11:40:12] 1-10.txt Token usage:Prompt: 17169, Completion: 414, Total: 17583, Model: doubao-1-5-pro-32k-250115
+[2025-05-12 11:40:13] 31-40.txt Token usage:Prompt: 14244, Completion: 418, Total: 14662, Model: doubao-1-5-pro-32k-250115
+[2025-05-12 11:40:15] 41-50.txt Token usage:Prompt: 13571, Completion: 490, Total: 14061, Model: doubao-1-5-pro-32k-250115
+[2025-05-12 11:40:20] 11-20.txt Token usage:Prompt: 14234, Completion: 540, Total: 14774, Model: doubao-1-5-pro-32k-250115
+[2025-05-12 11:40:45] 51-60.txt Token usage:Prompt: 14879, Completion: 387, Total: 15266, Model: doubao-1-5-pro-32k-250115
+[2025-05-12 11:40:52] 71-80.txt Token usage:Prompt: 22426, Completion: 398, Total: 22824, Model: doubao-1-5-pro-32k-250115
+[2025-05-12 11:40:53] 91-100.txt Token usage:Prompt: 14850, Completion: 450, Total: 15300, Model: doubao-1-5-pro-32k-250115
+[2025-05-12 11:40:57] 61-70.txt Token usage:Prompt: 17247, Completion: 528, Total: 17775, Model: doubao-1-5-pro-32k-250115
+[2025-05-12 11:40:57] 81-90.txt Token usage:Prompt: 21321, Completion: 481, Total: 21802, Model: doubao-1-5-pro-32k-250115

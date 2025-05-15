@@ -1,12 +1,25 @@
 # 网络小说智能摘要系统
 
+## TODO
+
+1. 让文案偏向小说解说风格，比如：书接上回、细节描述风格、标题生成、优化prompt
+2. 适配MacOS，适配Linux文件路径
+3. TTS项目：文字转语音
+4. FFmpeg：视频生成与格式编码
+
 ## 项目简介
 
-这是一个自动化处理网络小说的工具，主要功能包括：
+本项目是一个基于Python的网络小说智能摘要系统，使用了火山引擎的Doubao大模型进行文本摘要。
+它可以批量处理小说章节文件，为每10章小说生成智能摘要，并将摘要保存到Excel文件中。
+同时，它还支持调用API进行润色，生成解说文案，并使用微软TTS API将文案生成语音和SRT字幕。
+
+脚本流程：
 
 1. 爬取网络小说内容
-2. 调用大模型API对小说章节进行智能摘要
-3. 生成精简的情节概要
+2. 调用大模型API批量对每10章小说章节进行智能摘要
+3. 调用API润色成解说文案
+4. 使用微软TTS API将文案生成语音和SRT字幕
+5. 整合个要数据，存放到excel
 
 ## 功能特点
 
@@ -14,17 +27,73 @@
 - 使用火山引擎Doubao大模型进行文本摘要
 - 自动记录API调用情况和token消耗
 - 支持自定义prompt模板
+- 多线程处理提高API调用效率
+- 文本转语音功能支持中文语音
+
+## 脚本功能描述
+
+### 主流程脚本
+
+1. `01_CrawlNovel.py`：网络小说爬取脚本
+
+   - 输入：小说目录页URL（示例使用笔趣阁网站）
+   - 输出：原始章节文件（存放于1_小说名目录）
+   - 功能：自动爬取各章内容，保留网站原始格式
+2. `02_Regulation.py`：文本规范化处理器
+
+   - 输入：1_*目录的原始文件
+   - 输出：清洗后的文本文件（存放于2_小说名_yuanwen目录）
+   - 核心功能：使用正则表达式提取 `zw443sx`标记间的正文内容
+   - 异常处理：自动跳过无标记文件并记录警告
+3. `03_MergeFiles.py`：章节合并器
+
+   - 输入：2_*目录的规范文件
+   - 输出：每10章合并文件（存放于3_merge_chapters_10目录）
+   - 特性：支持自定义合并章节数，自动处理文件名编码问题
+4. `04_SummarizeNovel.py`：智能摘要生成器
+
+   - 输入：3_*目录的合并文件
+   - 输出：AI生成摘要（存放于4_summaries目录）
+   - 功能亮点：
+     - 集成火山引擎Doubao大模型API
+     - 多线程批量处理（默认5并发）
+     - 自动记录API token消耗情况
+     - 支持自定义prompt模板
+5. `05_Polish.py`：文案润色器
+
+   - 输入：4_*目录的摘要文件
+   - 输出：解说风格文案（存放于5_polish目录）
+   - 特性：支持添加"书接上回"等传统话本元素
+6. `06_TTS.py`：语音合成器
+
+   - 输入：5_*目录的润色文案
+   - 输出：语音文件(.mp3)和SRT字幕（分别存放于6_tts和6.5_srt目录）
+   - 功能：集成微软TTS API，支持中英文语音合成
+
+### 工具脚本
+
+| 脚本文件              | 功能描述                                              |
+| --------------------- | ----------------------------------------------------- |
+| `process_files.py`  | 文件内容检测器，支持关键词过滤和敏感内容清理          |
+| `count_words.py`    | 字数统计工具，支持批量计算章节平均字数                |
+| `merge_files.py`    | 高级文件合并器，支持正则表达式匹配文件名              |
+| `keyword_search.py` | 多关键词搜索工具，支持多线程快速检索（10万文件/分钟） |
+| `tts_quick.py`      | 快速语音合成工具，支持单文件即时转换                  |
+| `tts_api.py`        | TTS服务API封装，支持自定义语速/语调参数               |
+
+### 项目使用流程：
+
+1. '01_CrawlNovel.py'：爬取小说内容 修改url和小说名称， 示例url是用笔趣阁爬取的，爬取到小说内容放在1_xxxx文件夹下，
+   每个文件对应一章小说内容和无用信息
+2. '02_Regulation.py'：处理小说内容，去除无用信息，只保留小说内容，处理后的小说内容放在2_xxxx文件夹下
+3. '03_MergeFiles.py'：合并小说章节，每10章合并为一个文件，合并后的文件放在3_xxxx文件夹下，每个文件对应10章小说内容
+4. '04_SummarizeNovel.py'：生成小说摘要，生成的摘要放在4_xxxx文件夹下
+   5.'05_Polish.py': 对生成的摘要进行润色，生成的摘要放在5_xxxx文件夹下
+   6.'06_TTS.py': 对生成的摘要进行语音合成，生成的语音放在6_xxxx文件夹下，生成的字幕放在6.5_xxxx文件夹下
 
 ## 文件结构
 
-```
-summary_novel/
-├── summarize_novel.py        # 主程序，处理小说摘要
-├── tool-script/              # 辅助工具脚本
-│   └── extract_first_100_files.py  # 文件提取工具
-├── 3_merge_chapters_part/    # 输入文件夹(原始小说章节)
-└── 4_summaries_good/         # 输出文件夹(生成摘要)
-```
+
 
 ## 使用说明
 
@@ -50,80 +119,15 @@ python summarize_novel.py
 ## 注意事项
 
 - 确保输入文件为UTF-8编码
-- 大模型API调用需要网络连接
-- 建议先在小批量文件上测试
+- 大模型API调用 需要开通权限，按步骤开通教程https://console.volcengine.com/ark/region:ark+cn-beijing/experience/
+- 建议先在小批量文件上测试第4、5、6 步的内容，确定输出结果满意后， 再全部调用
 
 ## 示例输出
 
-生成的摘要文件将保存在 `4_summaries_good`文件夹中，保持与原文件相同的文件名。
+* [ ]
 
 ## 依赖项
 
 - Python 3.7+
 - volcenginesdkarkruntime
 - python-dotenv
-
-
-
-根据我查看的项目文件结构，这是一个小说摘要处理项目，主要包含以下文件和目录：
-
-1. *1_xianni\* 目录
-
-- 包含大量.txt文件（1.txt到267.txt等）
-- 这些是原始小说章节文件，由爬虫从网站抓取
-
-2. ** 2_xianni_yuanwen ** 目录
-
-- 包含处理后的完整小说文本文件
-- 由regulation.py处理原始文件生成
-
-3. **3_merge_chapters_10\** 目录
-
-- 包含合并后的章节文件
-- 由merge_files.py将10个章节合并为一个文件生成
-
-4. **4_summaries_10\** 目录
-
-- 存放小说章节的AI摘要结果
-- 由summarize_novel.py或summarize_novel_V2.py生成
-
-主要代码文件功能：
-
-<mcfile name="regulation.py" path="c:\Users\Administrator\Desktop\summary_novel\regulation.py"></mcfile>
-- 从原始文件中提取zw443sx标记之间的正文内容
-- 处理1_xianni目录中的文件，输出到2_xianni_yuanwen目录
-
-<mcfile name="merge_files.py" path="c:\Users\Administrator\Desktop\summary_novel\merge_files.py"></mcfile>
-- 将多个章节文件合并为单个文件（每10章合并）
-- 处理2_xianni_yuanwen目录中的文件，输出到3_merge_chapters_10目录
-
-<mcfile name="summarize_novel.py" path="c:\Users\Administrator\Desktop\summary_novel\summarize_novel.py"></mcfile>
-- 使用AI API生成小说章节摘要
-- 主要功能包括：
-  - 检查API可用性
-  - 读取文件内容
-  - 记录API使用情况
-  - 处理单个文件生成摘要
-
-<mcfile name="summarize_novel_V2.py" path="c:\Users\Administrator\Desktop\summary_novel\summarize_novel_V2.py"></mcfile>
-- summarize_novel.py的改进版本
-- 添加了多线程批量处理功能
-- 优化了API调用和日志记录
-
-<mcfile name="crawl4.py" path="c:\Users\Administrator\Desktop\summary_novel\crawl4.py"></mcfile>
-- 网络爬虫脚本
-- 从特定网站抓取小说章节内容
-- 保存到1_xianni目录
-
-工具脚本（tool-script目录）：
-
-- count_words.py - 统计文件字数
-- extract_first_100_files.py - 提取前100个文件
-- pachong_douban250.py - 豆瓣电影Top250爬虫
-- test*.py - 各种测试脚本
-
-其他文件：
-
-- prompt.txt - AI提示词模板
-- api_usage.log - API使用日志
-- .env - 环境变量文件（存储API密钥等）

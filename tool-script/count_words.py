@@ -33,5 +33,5 @@ def count_words_in_directory(directory):
 if __name__ == "__main__":
     # 指定要统计的目录路径
     #target_dir = r"C:\Users\Administrator\Desktop\xiaoshuo_suoxie\3.5_merge_chapters"
-    target_dir = r"C:\Users\Administrator\Desktop\summary_novel\3_merge_chapters_xianni"
+    target_dir = r"C:\Users\Administrator\Desktop\summary_novel\3_merge_chapters_zhetian"
     count_words_in_directory(target_dir)

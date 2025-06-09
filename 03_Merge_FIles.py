@@ -4,8 +4,8 @@ import os
 """
 def merge_txt_files():
     # 设置输入和输出目录路径
-    input_dir = r"C:\Users\Administrator\Desktop\summary_novel\2_zhetian"
-    output_dir = r"C:\Users\Administrator\Desktop\summary_novel\3_merge_chapters_zhetian"
+    input_dir = "/Users/macbookair/project_cursor/summary_novel/2_aoshijiutian"
+    output_dir = "/Users/macbookair/project_cursor/summary_novel/3_merge_aoshijiutian"
     
     # 创建输出目录（如果不存在）
     os.makedirs(output_dir, exist_ok=True)

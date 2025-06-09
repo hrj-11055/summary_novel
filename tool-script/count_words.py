@@ -49,5 +49,5 @@ def count_words_in_directory(directory):
 
 if __name__ == "__main__":
     # 指定要统计的目录路径
-    target_dir = r"C:\Users\Administrator\Desktop\summary_novel\2_douluo2_yuanwen"
+    target_dir = "/Users/macbookair/project_cursor/summary_novel/2_aoshijiutian"
     count_words_in_directory(target_dir)

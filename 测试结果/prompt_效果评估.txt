@@ -1,0 +1,12 @@
+prompt 1 : 简单的prompt 效果挺不错的啊
+
+05——润色——V2 
+用 Deepseek R1，润色
+prompt：  只需输出润色内容（纯文本），无需解释
+
+06-tts
+  参数：
+  voice
+  音调
+  音量
+  

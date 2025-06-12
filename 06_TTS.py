@@ -5,13 +5,13 @@ import asyncio
 import os
 import edge_tts
 
-INPUT_FOLDER = r"C:\Users\Administrator\Desktop\summary_novel\5_polish"
-OUTPUT_FOLDER = r"C:\Users\Administrator\Desktop\summary_novel\6_tts_srt"
-#VOICE = "zh-CN-YunxiNeural"  # 中文语音
+INPUT_FOLDER = r"C:\Users\Administrator\Desktop\summary_novel\4_summaries_10"
+#OUTPUT_FOLDER = r"C:\Users\Administrator\Desktop\summary_novel\6_tts"
+VOICE = "zh-CN-YunxiNeural"  # 中文语音
 # VOICE = "zh-CN-XiaoxiaoNeural"  # 中文语音
 # VOICE = "zh-CN-XiaoyiNeural"
 # VOICE = "zh-CN-YunjianNeural"
-VOICE = "zh-CN-YunxiaNeural"
+# VOICE = "zh-CN-YunxiaNeural"
 # VOICE = "zh-CN-XiaoxiaoNeural"
 # VOICE = "zh-CN-XiaoyiNeural"
 # VOICE = "zh-CN-YunjianNeural"
@@ -30,29 +30,44 @@ VOICE = "zh-CN-YunxiaNeural"
 # zu-ZA-ThandoNeural
 # zu-ZA-ThembaNeural
 async def convert_text_to_speech(text: str, output_path: str) -> None:
-    """将文本转换为语音并保存为MP3"""
-    communicate = edge_tts.Communicate(text, VOICE)
-    await communicate.save(output_path)
+    communicate = edge_tts.Communicate(
+        text,
+        VOICE,
+        rate="+10%",
+        volume="+10%",
+        pitch="+10Hz"
+    )
+    subs = edge_tts.SubMaker()
+    # 创建音频文件和字幕文件
+    async with communicate.stream() as stream:
+        # 保存音频
+        with open(output_path, "wb") as audio_file:
+            async for chunk in stream:
+                if chunk["type"] == "audio":
+                    audio_file.write(chunk["data"])
+                elif chunk["type"] == "WordBoundary":
+                    subs.create_sub((chunk["offset"], chunk["duration"]), chunk["text"])
+    # 生成SRT字幕
+    srt_path = output_path.replace('.mp3', '.srt')
+    with open(srt_path, 'w', encoding='utf-8') as srt_file:
+        srt_file.write(subs.generate_subs())
+
+# 修改输出目录常量
+OUTPUT_FOLDER = r"C:\Users\Administrator\Desktop\summary_novel\7_srt"
 
 async def process_files() -> None:
     """处理文件夹中的所有文本文件"""
     # 确保输出目录存在
     os.makedirs(OUTPUT_FOLDER, exist_ok=True)
-    
-    for filename in os.listdir(INPUT_FOLDER):
-        if filename.endswith('.txt'):
-            input_path = os.path.join(INPUT_FOLDER, filename)
-            output_filename = filename.replace('.txt', '.mp3')
-            output_path = os.path.join(OUTPUT_FOLDER, output_filename)
-            
-            try:
-                with open(input_path, 'r', encoding='utf-8') as f:
+    # 这里需要添加遍历文件并调用 convert_text_to_speech 的逻辑
+    for root, dirs, files in os.walk(INPUT_FOLDER):
+        for file in files:
+            if file.endswith('.txt'):
+                file_path = os.path.join(root, file)
+                with open(file_path, 'r', encoding='utf-8') as f:
                     text = f.read()
-                    print(f"正在处理: {filename}")
-                    await convert_text_to_speech(text, output_path)
-                    print(f"已生成: {output_path}")
-            except Exception as e:
-                print(f"处理文件 {filename} 时出错: {e}")
+                output_mp3_path = os.path.join(OUTPUT_FOLDER, os.path.splitext(file)[0] + '.mp3')
+                await convert_text_to_speech(text, output_mp3_path)
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     asyncio.run(process_files())

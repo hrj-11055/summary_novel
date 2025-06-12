@@ -1,35 +1,33 @@
 import os
-"""
- 合并章节 10章或 5章合成 一篇  一篇 平均3000字   在2000-4000字不等
-"""
+
 def merge_txt_files():
     # 设置输入和输出目录路径
-    input_dir = r"C:\Users\Administrator\Desktop\summary_novel\2_zhetian"
-    output_dir = r"C:\Users\Administrator\Desktop\summary_novel\3_merge_chapters_zhetian"
+    input_dir = r"C:\Users\Administrator\Desktop\summary_novel\2_meinv"
+    output_dir = r"C:\Users\Administrator\Desktop\summary_novel\3_merge_meinv"
     
     # 创建输出目录（如果不存在）
     os.makedirs(output_dir, exist_ok=True)
-    
-    # 获取所有1-2016.txt文件并按数字排序
-    files = sorted([f for f in os.listdir(input_dir) if f.endswith('.txt') and f[:-4].isdigit() and 1 <= int(f[:-4]) <= 2045], 
-                  key=lambda x: int(x[:-4]))
 
-    # 每10个文件合并一次
-    for i in range(0, len(files), 10):
-        # 确定合并范围，根据示例，结束编号应该是起始编号加10（如果足够的话）
+    files = sorted([f for f in os.listdir(input_dir) 
+                   if f.endswith('.txt') and f[:-4].isdigit() and 1 <= int(f[:-4]) <= 2045],
+                   key=lambda x: int(x[:-4]))
+
+    # 修改点1：将步长10改为5
+    for i in range(0, len(files), 5):
         start = int(files[i][:-4])
-        end = start + 9 if i + 9 < len(files) else int(files[len(files) - 1][:-4])
+        # 修改点2：结束编号计算从+9改为+4
+        end = start + 4 if i + 4 < len(files) else int(files[-1][:-4])
         output_filename = f"{start}-{end}.txt"
         output_path = os.path.join(output_dir, output_filename)
         
         # 合并文件
         with open(output_path, 'w', encoding='utf-8') as outfile:
-            for j in range(i, min(i + 10, len(files))):
+            # 修改点3：合并范围从10改为5
+            for j in range(i, min(i + 5, len(files))):
                 file_path = os.path.join(input_dir, files[j])
                 with open(file_path, 'r', encoding='utf-8') as infile:
-                    outfile.write(infile.read())
-                    outfile.write("\n\n")  # 添加分隔符
-        
+                    outfile.write(infile.read() + "\n\n")
+
         print(f"已合并文件到: {output_path}")
         
         # 统计3_merge_chapters目录下的文件数并打印

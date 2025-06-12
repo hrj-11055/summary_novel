@@ -6,9 +6,9 @@ import re
 """
 def extract_first_100_files():
     # 源文件夹路径
-    source_folder = r"C:\Users\Administrator\Desktop\summary_novel\3_merge_chapters_xianni"
+    source_folder = "/Users/macbookair/project_cursor/summary_novel/3_merge_aoshijiutian"
     # 新文件夹路径
-    target_folder = r"C:\Users\Administrator\Desktop\summary_novel\3_merge_chapters_50"
+    target_folder = "/Users/macbookair/project_cursor/summary_novel/4_summaries_10"
     
     # 创建目标文件夹
     if not os.path.exists(target_folder):
@@ -26,7 +26,7 @@ def extract_first_100_files():
     sorted_files = sorted(files, key=get_number)
     
     # 提取前50个文件
-    for i, filename in enumerate(sorted_files[:50]):
+    for i, filename in enumerate(sorted_files[:30]):
         source_path = os.path.join(source_folder, filename)
         target_path = os.path.join(target_folder, filename)
         

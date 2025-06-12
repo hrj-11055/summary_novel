@@ -1,7 +1,5 @@
 """
-怎么会这样：token占满，但没有使用上下文缓存啊, 
 
-因为尽管删除了content_ID没用上下文缓存API ，但有使用modelID 是固定某个有上下文对话的模型
 
 modelID：ep-20250427214610-2tdd2  豆包pro32K
 """
@@ -10,6 +8,13 @@ import datetime
 from dotenv import load_dotenv
 from openai import responses
 from volcenginesdkarkruntime import Ark
+
+# 在文件开头加载环境变量
+load_dotenv()
+
+# 验证环境变量
+if not os.environ.get("ARK_API_KEY"):
+    raise ValueError("未找到ARK_API_KEY环境变量，请确保.env文件中包含此变量")
 
 def read_file_content(file_path):
     """
@@ -79,7 +84,8 @@ def process_single_file(client, filename, input_folder, output_folder, prompt_co
 
     try:
         response = client.chat.completions.create(
-            model="ep-20250427230855-gfc8x",# doubao1.5pro 32k 250115，  直接填入模型名称会导致模型没有上下文缓存，好处是token消耗少10000每次
+            #model = "ep-20250606085947-x9brg", # 豆包pro256K 
+            model="ep-20250427230855-gfc8x",# doubao1.5pro 32k 250115，
             #context_id="ctx-20250428004144-r7qss",
             messages=[
                 {
@@ -125,49 +131,52 @@ def summarize_novel():
     4. 确保输出目录存在
     5. 使用线程池批量处理文件(每次5个)
     """
-    load_dotenv()
-
-    client = Ark(api_key=os.environ.get("ARK_API_KEY"))
-
-    prompt_content = read_file_content("prompt.txt")
-    if not prompt_content:
-        print("无法读取提示词内容，请检查文件路径和权限")
-        return
-
-    #input_folder = r"C:\Users\Administrator\Desktop\xiaoshuo_suoxie\3_merge_chapters_first_100"
-    input_folder = r"C:\Users\Administrator\Desktop\summary_novel\3_merge_chapters_50"
-    output_folder = r"C:\Users\Administrator\Desktop\summary_novel\4_summaries_50"
-    ensure_output_folder_exists(output_folder)
-
-    # 获取文件列表
-    file_list = os.listdir(input_folder)
-    
-    # 使用线程池批量处理(每次5个)
-    from concurrent.futures import ThreadPoolExecutor
-    BATCH_SIZE = 5
-
-
-    
-    with ThreadPoolExecutor(max_workers=BATCH_SIZE) as executor:
-        for i in range(0, len(file_list), BATCH_SIZE):
-            batch = file_list[i:i+BATCH_SIZE]
-            print(f"\n=== 正在处理批次 {i//BATCH_SIZE+1} (共{len(batch)}个文件) ===")
+    try:
+        api_key = os.environ.get("ARK_API_KEY")
+        if not api_key:
+            raise ValueError("无法获取ARK_API_KEY环境变量")
             
-            # 提交批处理任务
-            futures = [
-                executor.submit(
-                    process_single_file, 
-                    client, 
-                    filename, 
-                    input_folder, 
-                    output_folder, 
-                    prompt_content
-                ) for filename in batch
-            ]
-            
-            # 等待当前批次完成
-            for future in futures:
-                future.result()
+        client = Ark(api_key=api_key)
+        
+        prompt_content = read_file_content("prompt_1500.txt")
+        if not prompt_content:
+            print("无法读取提示词内容，请检查文件路径和权限")
+            return
+
+        #input_folder = r"C:\Users\Administrator\Desktop\xiaoshuo_suoxie\3_merge_chapters_first_100"
+        input_folder = "/Users/macbookair/project_cursor/summary_novel/2_aoshi580"
+        output_folder = "/Users/macbookair/project_cursor/summary_novel/4_summaries_570"
+        ensure_output_folder_exists(output_folder)
+
+        # 获取文件列表
+        file_list = os.listdir(input_folder)
+        
+        # 使用线程池批量处理(每次5个)
+        from concurrent.futures import ThreadPoolExecutor
+        BATCH_SIZE = 5
+
+        with ThreadPoolExecutor(max_workers=BATCH_SIZE) as executor:
+            for i in range(0, len(file_list), BATCH_SIZE):
+                batch = file_list[i:i+BATCH_SIZE]
+                print(f"\n=== 正在处理批次 {i//BATCH_SIZE+1} (共{len(batch)}个文件) ===")
+                
+                # 提交批处理任务
+                futures = [
+                    executor.submit(
+                        process_single_file, 
+                        client, 
+                        filename, 
+                        input_folder, 
+                        output_folder, 
+                        prompt_content
+                    ) for filename in batch
+                ]
+                
+                # 等待当前批次完成
+                for future in futures:
+                    future.result()
+    except Exception as e:
+        print(f"处理过程中出错: {e}")
 
 if __name__ == "__main__":
     summarize_novel()
